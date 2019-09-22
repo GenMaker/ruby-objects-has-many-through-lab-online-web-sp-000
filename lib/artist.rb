@@ -11,8 +11,7 @@ class Artist
 
   def new_song(name,genre)
   binding.pry
-    song = Song.new(name,genre)
-    song.artist = self
+    song = Song.new(name,self,genre)
     song
   end
 
